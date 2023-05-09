@@ -1,3 +1,139 @@
+<!DOCTYPE html>
 
-<H1> ENTETE </H1>
-<hr>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fortunel Alizé, Trepos Pauline, Estelle Roudet, Laverton Agath, Aude Souchon">
+<title>Brico & co</title>
+
+<style>
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2D9988;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #2D9988;
+}
+
+nav li.dropdown {
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-right: 20 px;
+}
+
+.dropdown-content li {
+  float: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  float: right;
+}
+
+img{
+height: 30%;
+width: 10%;
+}
+
+
+
+</style>
+
+</head>
+
+<body> <br> 
+
+<header>
+
+<div>
+<form action="/search-results.html" method="get">
+  <input type="text" name="q" placeholder="Recherche...">
+  <button onclick="search()">Q</button> 
+        <button type="button" class="btn"><3</button>
+        <button type="button" class="btn">Login</button>
+        <button type="button" class="btn">Sign-up</button>
+</form>
+</div>
+
+<br>
+
+<nav>
+  <ul>
+    <li><a href="#"></a></li>
+    <li><img src="LOGO.png" alt="Image" ></li>
+    <li class="dropdown">
+      <a href="#"> Chambre </a>
+       <ul class="dropdown-content">
+        <li><a href="#">Produit 1</a></li>
+        <li><a href="#">Produit 2</a></li>
+        <li><a href="#">Produit 3</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">Cuisine </a>
+      <ul class="dropdown-content">
+        <li><a href="#">Produit 1</a></li>
+        <li><a href="#">Produit 2</a></li>
+        <li><a href="#">Produit 3</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">Salle de bain </a>
+        <ul class="dropdown-content">
+        <li><a href="#">Produit 1</a></li>
+        <li><a href="#">Produit 2</a></li>
+        <li><a href="#">Produit 3</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#"> Salon </a>
+        <ul class="dropdown-content">
+        <li><a href="#">Produit 1</a></li>
+        <li><a href="#">Produit 2</a></li>
+        <li><a href="#">Produit 3</a></li>
+      </ul>
+    </li>
+     <li class="dropdown">
+      <a href="#"> Jardin </a>
+        <ul class="dropdown-content">
+        <li><a href="#">Produit 1</a></li>
+        <li><a href="#">Produit 2</a></li>
+        <li><a href="#">Produit 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+</body>
+</html>
